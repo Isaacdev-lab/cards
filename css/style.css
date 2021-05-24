@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap');
+
+
+/* This is the reset style */
+/* Universal Selector */
+:root{
+
+    /* Primary colors */
+
+    --red-color: hsl(0, 78%, 62%);
+    --cyan-color: hsl(180, 62%, 55%);
+    --orange-color: hsl(34, 97%, 64%);
+    --blue-color: hsl(212, 86%, 64%);
+
+    /* Neutral */
+
+    --VeryDarkBlue-color: hsl(234, 12%, 34%);
+    --GrayishBlue-color: hsl(229, 6%, 66%);
+    --VeryLightGray-color: hsl(0, 0%, 98%);
+
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: none;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--VeryLightGray-color);
+}
+
+.container{
+    width: 80%;
+    height: 30rem;
+    margin: 100px auto;
+    position: relative; 
+}
+
+
+
+.lead{
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Card Group Styling */
+
+.card-group-top{
+    width: 200px;
+    height: 150px;
+    padding: 10px 50px 80px;
+    border-radius: 10px;
+    border-top: 4px solid var(--red-color);
+    box-shadow: 3px 3px 6px grey;
+    position: absolute;
+    left: 35%;
+    background-color: var(--light-color);
+    color: #002240; 
+    animation: slideInFromTop 1s ease-in;   
+}
+
+.card-group-top img{
+    width: 50px;
+    margin-top: 30px;
+    float: right;
+}
+
+.card-group-bottom{
+    width: 200px;
+    height: 150px;
+    padding: 10px 50px 80px;
+    border-radius: 10px;
+    border-top: 4px solid var(--orange-color);
+    box-shadow: 3px 3px 6px grey;
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    background-color: var(--light-color);
+    color: #002240;
+    animation: slideInFromBottom 1s ease-in;   
+}
+
+.card-group-bottom img{
+    width: 50px;
+    margin-top: 30px;
+    float: right;
+}
+
+.card-group-left{
+    width: 200px;
+    height: 150px;
+    padding: 10px 50px 80px;
+    border-radius: 10px;
+    border-top: 4px solid var(--cyan-color);
+    box-shadow: 3px 3px 6px grey;
+    position: absolute;
+    top: 25%;
+    right: 68%;
+    background-color: var(--light-color);
+    color: #002240;
+    animation: slideInFromLeft 1s ease-in;  
+}
+
+.card-group-left img{
+    width: 50px;
+    margin-top: 30px;
+    float: right;
+}
+
+.card-group-right{
+    width: 200px;
+    height: 150px;
+    padding: 10px 50px 80px;
+    border-radius: 10px;
+    border-top: 4px solid var(--blue-color);
+    box-shadow: 3px 3px 6px grey;
+    position: absolute;
+    top: 25%;
+    left: 68%;
+    background-color: var(--light-color);
+    color: #002240; 
+    animation: slideInFromRight 1s ease-in;  
+}
+
+.card-group-right img{
+    width: 50px;
+    margin-top: 30px;
+    float: right;
+}
+
+/* Animation Styling */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
